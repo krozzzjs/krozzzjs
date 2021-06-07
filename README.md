@@ -14,13 +14,13 @@ let prefix = "!" //Establecemos el prefijo
 client.on("ready", async() => {
      console.log(`He iniciado, mi nombre es ${client.user.tag} y estoy en ${client.guild.cache.size} servidores!`) //Enviaremos un mensaje a nuestra consola
      client.user.setPresence({
-			status: 'online', //Seleccionamos online, para que el bot se vea online, puedes elejir, "online"/"idle"/"dnd"
-			activity: {
-				name: `Estoy usando el codigo base de @KrozZz#9534!`, //Seleccionamos un estado para nuestro bot, pueden cambiar esto!
-				type: 'WATCHING' //Seleccionamos la acción que el bot esta haciendo, en este caso es WATCHING(Viendo), pueden elejir, "PLAYING"/"WATCHING"/"STREAMING", en español: Jugando, Viendo, Stremeando
-			}
-		});
-}
+	status: 'online', //Seleccionamos online, para que el bot se vea online, puedes elejir, "online"/"idle"/"dnd"
+	activity: {
+	  name: `Estoy usando el codigo base de @KrozZz#9534!`, //Seleccionamos un estado para nuestro bot, pueden cambiar esto!
+          type: 'WATCHING' //Seleccionamos la acción que el bot esta haciendo, en este caso es WATCHING(Viendo), pueden elejir, "PLAYING"/"WATCHING"/"STREAMING", en español: Jugando, Viendo, Stremeando
+	  }
+     });
+});
 
 /////Evento message
 client.on("message", => async message => {
